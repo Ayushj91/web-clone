@@ -31,7 +31,7 @@ const Navbar = () => {
       opacity: 1,
       scale: 0.5,
       x: "60vw",
-      y: "-10vh", 
+      y: "-10vh",
       transition: {
         delayChildren: 0.3,
         staggerChildren: 0.2,
@@ -158,31 +158,67 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
+      <ul className=" hidden max-lg:flex max-lg:flex-wrap  p-4">
+  <li className="w-full md:w-1/4">
+    <a
+      href="#"
+      className="text-black font-medium rounded-lg text-2xl px-4 py-2 text-center"
+    >
+      LONDON DRY
+    </a>
+  </li>
+  <li className="w-full md:w-1/4">
+    <a
+      href="#"
+      className="text-black font-medium rounded-lg text-2xl px-4 py-2 text-center"
+    >
+      SPICED BLEND
+    </a>
+  </li>
+  <li className="w-full md:w-1/4">
+    <a
+      href="#"
+      className="text-black font-medium rounded-lg text-2xl px-4 py-2 text-center"
+    >
+      APERITIF
+    </a>
+  </li>
+  <li className="w-full md:w-1/4">
+    <a
+      href="#"
+      className="text-black font-medium rounded-lg text-2xl px-4 py-2 text-center"
+    >
+      TRIO
+    </a>
+  </li>
+</ul>
       <div className="flex flex-wrap mt-10">
-      <div className="flex-6 p-4">
-  <div className="m-8"> 
-    <div className="border border-black rounded-full overflow-hidden w-13 p-3 my-8"> 
-      <img
-        src={require("./product.webp")}
-        alt="1"
-        className="w-full h-full object-cover px-16 py-16" 
-      />
-    </div>
-  </div>
-</div>
+        <div className="flex-1 p-4">
+          <div className="m-8">
+            <div className="border border-black rounded-full overflow-hidden w-13 p-3 my-8">
+              <img
+                src={require("./product.webp")}
+                alt="1"
+                className="w-full h-full object-cover px-16 py-16"
+              />
+            </div>
+          </div>
+        </div>
 
         <div className="flex-1 p-24">
           <p className="p-2 m-6"></p>
           <div className="flex-1 p-4">
             <div className="p-2 border-b border-gray-300">
               {/* Section 1 */}
-              <ul className="flex flex-wrap">
+              <ul className="hidden min-sm:flex min-sm:flex-wrap lg:flex lg:flex-wrap">
                 <li className="w-1/4">
                   <a
                     href="#"
                     className="text-black focus:font-medium focus:underline"
                   >
-                    <span className="text-xl">LONDON DRY</span>
+                    <span className="2xl:text-xl xl:text-sm max-xs:text-sm">
+                      LONDON DRY
+                    </span>
                   </a>
                 </li>
                 <li className="w-1/4">
@@ -190,7 +226,9 @@ const Navbar = () => {
                     href="#"
                     className="text-black focus:font-medium focus:underline"
                   >
-                    <span className="text-xl">SPICED BLEND</span>
+                    <span className="2xl:text-xl xl:text-sm sm:text-lg">
+                      SPICED BLEND
+                    </span>
                   </a>
                 </li>
                 <li className="w-1/4">
@@ -198,7 +236,9 @@ const Navbar = () => {
                     href="#"
                     className="text-black focus:font-medium focus:underline"
                   >
-                    <span className="text-xl">APERITIF</span>
+                    <span className="2xl:text-xl xl:text-sm sm:text-lg">
+                      APERITIF
+                    </span>
                   </a>
                 </li>
                 <li className="w-1/4">
@@ -206,7 +246,9 @@ const Navbar = () => {
                     href="#"
                     className="text-black focus:font-medium focus:underline"
                   >
-                    <span className="text-xl">TRIO</span>
+                    <span className="2xl:text-xl xl:text-sm sm:text-lg">
+                      TRIO
+                    </span>
                   </a>
                 </li>
               </ul>
