@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Bakerville';
+  src: url(../public/Baskerville\ Italic.ttf);
+}
+.bakerville{
+  font-family: 'Bakerville';
+  
+}
